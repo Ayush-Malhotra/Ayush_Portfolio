@@ -8,6 +8,7 @@ export default function Home() {
         marginTop: "110px",
         display: "flex",
         alignItems: "center",
+        flexWrap: "wrap-reverse",
       }}
     >
       <Box
@@ -55,8 +56,8 @@ export default function Home() {
         >
           <Box
             sx={{
-              width: "350px",
-              height: "350px",
+              width: { xs: "150px", md: "350px" },
+              height: { xs: "150px", md: "350px" },
               borderRadius: "50%",
               backgroundSize: "cover",
               overflow: "hidden",
