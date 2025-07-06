@@ -9,14 +9,16 @@ export default function Home() {
         display: "flex",
         alignItems: "center",
         flexWrap: "wrap-reverse",
+        justifyContent: "center",
       }}
     >
       <Box
         sx={{
-          width: "50%",
+          width: { xs: "100%", md: "50%" },
           display: "flex",
           flexDirection: "column",
           gap: "20px",
+          alignItems: "center",
         }}
       >
         <Typography variant="h5" sx={{ color: "#666666" }}>
@@ -46,8 +48,8 @@ export default function Home() {
           sx={{
             margin: "auto",
             border: "2px solid #809c13",
-            width: "400px",
-            height: "400px",
+            width: { xs: "200px", md: "400px" },
+            height: { xs: "200px", md: "400px" },
             borderRadius: "50%",
             display: "flex",
             justifyContent: "center",
